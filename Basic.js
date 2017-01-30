@@ -4,8 +4,8 @@
 function BasicCard(front, back){
 
 //receiving the results of the call//
-if(!(instanceof BasicCard)) {
-	new BasicCard(front, back);
+if(!(this instanceof BasicCard)) {
+	return new BasicCard(front, back);
 
 }
 
@@ -13,3 +13,5 @@ if(!(instanceof BasicCard)) {
  this.front = front;
  this.back = back;
 }
+
+console.log(BasicCard);
